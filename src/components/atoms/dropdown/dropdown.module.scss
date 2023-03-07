@@ -1,0 +1,27 @@
+.dropdown {
+    height: 100%;
+    background: inherit;
+    overflow: hidden;
+    
+    select {
+        height: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: none;
+        color: #fff;
+        background: inherit;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        
+
+        .dropdownOptions {
+            background-color: var(--dark-400);
+            font-size: 18px;
+            line-height: 1.2;
+            cursor: pointer;
+        }
+    }
+}

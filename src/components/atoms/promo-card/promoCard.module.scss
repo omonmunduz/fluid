@@ -1,0 +1,46 @@
+
+.promoCard {
+    width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+    transition: box-shadow .3s;
+
+
+    .promoCardContent {
+        position: absolute;
+
+        .promoType {
+            color: red;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .productTitle {
+            font-size: 22px;
+        }
+
+        .description {
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .buyNowBtn {
+            width: 160px;
+            padding: 4px;
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid var(--grey-300);
+            text-align: center;
+            margin-top: 30px;
+
+            &:hover {
+                box-shadow: 0 0 11px rgba(33,33,33,.2) ;
+                transition: 0.3s;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.mainHeader {
+    background-color: var(--dark-400);
+
+    .headerInnerCtn {
+        max-width: 1450px;
+        margin: 0 auto;
+        width: 100%; 
+
+
+        .mainHeaderCtn {
+            max-width: 1450px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 8px;
+            display: flex;
+            color: #fff;
+            
+    
+            p {
+                margin-bottom: 0;
+            }
+    
+            .headerLeftContent {
+                width: 50%;
+            }
+    
+            .headerRightContent {
+                width: 50%;
+                text-align: right;
+            }
+        }
+    
+        .mainNavItems {
+                display: flex;
+                padding:8px;
+            
+                .mainNavLogo {
+                    width: 25%;
+                }
+            
+                .mainNavSearchCtn {
+                    width: 50%;
+                }
+            
+                .mainNavUpperLinksCtn {
+                    display: flex; 
+                    width: 25%;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+        }
+    
+        .mainNavMenuCtn {
+            display: flex;
+            border-top: 1px solid var(--grey-300);
+                    .menuLinks {
+                       padding: 15px;
+                        .menuItem {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 18px;
+                            margin-right: 20px;
+                           
+                        }
+                    }
+        }
+    }
+}
