@@ -4,65 +4,25 @@ import styled from "styled-components";
 import styles from "./promoCard.module.scss";
 import classNames from 'classnames';
 
-const getCardStyles = (cardSize) => {
+const ImgCtn = styled.img`
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
 
-    let cardStyles = {
-        width: 0,
-        height: 0,
-        posTop: 0,
-        posLeft: 0,
-        fontSize:0,
-        color:"",
-        hoverState:"",
-        cursor:"",
+    @media (max-width: 633px) {
+        width: 100%;
     }
+`;
 
-    if(cardSize === "small"){
-        cardStyles.width = 300;
-        cardStyles.posTop = 40;
-        cardStyles.posLeft = 30;
-        cardStyles.hoverState = "0 0 11px rgba(33,33,33,.2)" ;
-        cardStyles.cursor = "pointer";
-    }
-    if(cardSize === "large") {
-        cardStyles.width = 640;
-        cardStyles.posTop = 80;
-        cardStyles.posLeft = 60;
-        cardStyles.hoverState="none";
-        cardStyles.cursor = "default";
-    }
-
-    return cardStyles;
-};
 
 
 const PromoCard = ({image, promoType, productTitle, description, cardSize, buttonText}) => {
-    const promoStyles = getCardStyles(cardSize);
-    
-    const PromoCardCtn = styled.div`
-        width: ${promoStyles.width}px;
-        cursor: ${promoStyles.cursor};
-        
-        &:hover {
-            box-shadow: ${promoStyles.hoverState};
-        }
-        
-         > div  {
-            left:${promoStyles.posLeft}px;
-            top: ${promoStyles.posTop}px;
-        }
-        
-    `;
 
-    const CardImgCtn = styled.img`
-        width: ${promoStyles.width}px;
-        border-radius: 8px;
-    `;
 
   return (
-    <PromoCardCtn className={styles.promoCard}>
+    <div className={styles.promoCard}>
         <div className={styled.promoCardImgCtn}>
-            <CardImgCtn src={image} alt={`${productTitle} ${description}`} />
+            <ImgCtn src={image} alt={`${productTitle} ${description} `} />
         </div>
         <div className={styles.promoCardContent}>
             <p className={styles.promoType}>
@@ -74,7 +34,7 @@ const PromoCard = ({image, promoType, productTitle, description, cardSize, butto
                 <a href="#" className={styles.buyNowBtn}>{buttonText}</a>
             )}
         </div>
-    </PromoCardCtn>
+    </div>
   )
 }
 

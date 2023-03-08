@@ -7,6 +7,7 @@ import cat3 from "../../../images/catbanner-03.jpg";
 import cat4 from "../../../images/catbanner-04.jpg";
 import propTypes from "prop-types";
 import styles from "./promotionsHero.module.scss";
+import LargePromoCard from '../../atoms/large-promo-card/large-promo-card.jsx';
 
 
 const promoCardItems = [
@@ -18,9 +19,12 @@ const promoCardItems = [
 
 const PromotionsHero = () => {
 
+    // create an an array with 10 obejcts inside. Filled with image, title, description, and promo type properties  
+    const carouselItems = Array(10).fill({img: cat1, title:"Laptops Max", description:"From $1699.00 or $64.62/mo.", promoType:"Best sale"});
+
   return (
     <div className={styles.promotionsHero}>
-        <PromoCard image={promoCardItems[2].img} promoType={promoCardItems[2].promoType}  productTitle={promoCardItems[2].productTitle} description={promoCardItems[2].description} cardSize="large" buttonText="Buy Now    " />
+        <LargePromoCard image={promoCardItems[2].img} promoType={promoCardItems[2].promoType}  productTitle={promoCardItems[2].productTitle} description={promoCardItems[2].description} cardSize="large" buttonText="Buy Now    " />
         <div className={styles.heroPromoCardsCtn}>
             {promoCardItems.map(card => {
                 return (
