@@ -1,5 +1,5 @@
 import React from 'react'
-import CategoryCard from '../../atoms/category-card/category-card';
+import CategoryCard from "../../atoms/category-card/category-card";
 import styles from "./category-listing.module.scss";
 import cat1 from "../../../images/catbanner-01.jpg";
 import cat2 from "../../../images/catbanner-02.jpg";
