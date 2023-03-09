@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState} from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import LinkItem from '../atoms/link-item/link-item.jsx';
 import userIcon from "../../images/user.svg";
@@ -12,6 +12,14 @@ import styles from './header.module.scss'
 const dropdownOptions = ["Category 1", "Category 2", "Category 3", "Category 4", "Category 5"];
 
 const Header = () => {
+const [searchFor, setSearchFor] = useState('');
+
+
+const getSearchFor = (product) => {
+    setSearchFor(product);
+}
+
+
   return (
     <>
       <header className={styles.mainHeader}>
@@ -31,7 +39,7 @@ const Header = () => {
             </div>
 
             <div className={styles.mainNavSearchCtn}>
-              <SearchFrom placeHolderText={"Main Search Form"}/>
+              <SearchFrom placeHolderText={"Main Search Form"} getSearchFor={getSearchFor}/>
             </div>
 
             <div className={styles.mainNavUpperLinksCtn}>
