@@ -15,11 +15,11 @@ const promoCardItems = [
     {img: cat2, promoType:"new arrival", productTitle:"Buy Ipad Air", description:"From $1699.00 or $64.62/mo."},
 ];
 
-const CategotyListing = ({categoryItems}) => {
+const CategotyListing = ({name, categoryItems}) => {
   return (
     <div className={styles.categotyListing}>
         <div className={styles.textCtn}>
-            <h3>Popular Categories</h3>
+            <h3>{name}</h3>
         </div>
        <div className={styles.cardsCtn}>
         {promoCardItems.map((item,ind) => {

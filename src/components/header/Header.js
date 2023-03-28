@@ -21,7 +21,6 @@ const getSearchFor = (product) => {
 
 
   return (
-    <>
       <header className={styles.mainHeader}>
         <div className={styles.headerInnerCtn}>
           <div className={styles.mainHeaderCtn}>
@@ -62,7 +61,6 @@ const getSearchFor = (product) => {
           </div>
         </div>
       </header>
-    </>
   )
 }
 
