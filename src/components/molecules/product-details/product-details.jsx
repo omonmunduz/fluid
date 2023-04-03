@@ -1,6 +1,5 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import ErrorBoundary from 'antd/es/alert/ErrorBoundary';
 import { useQuery } from '@tanstack/react-query';
 import fetchProduct from '../../../assets/js/fetchProduct';
 

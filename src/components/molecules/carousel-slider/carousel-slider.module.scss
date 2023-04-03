@@ -1,0 +1,13 @@
+.sliderc {
+    min-height: 400px;
+    width: 100%;
+    border: 5px solid blue;
+    display: flex;
+
+    .mySwiper {
+        .items {
+            border: 3px solid red;
+        }
+    }
+
+}

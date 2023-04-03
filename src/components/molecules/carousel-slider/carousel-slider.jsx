@@ -1,27 +1,29 @@
-import React, { useState } from 'react'
-import { Autoplay, Pagination, Navigation } from "swiper";
+import styles from "./carousel-slider.module.scss";
+import React, { useRef, useState } from "react";
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProductCard from '../../atoms/product-card/product-card';
-import styles from "./product-listing.module.scss";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
-const ProductListing = ({items, title}) => {
+import { Pagination, Navigation } from "swiper";
+
+import "swiper/css";
+
+const CarouselSlider = () => {
   const [swiperRef, setSwiperRef] = useState(null);
 
   return (
-    <div className={styles.productListing}>
-      <h2>{title} :</h2>
-      <div className={styles.resultsCtn}>
+    <div className={styles.sliderc}>
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={4}
         centeredSlides={true} 
         autoplay={{
           delay: 1500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         breakpoints={{
           0: {
@@ -49,15 +51,13 @@ const ProductListing = ({items, title}) => {
         modules={[Autoplay, Pagination, Navigation]}
         className={`${styles.mySwiper} ${styles.initialOffset}`}
       >
-        {items.map((item,ind) => {
-            return <SwiperSlide key={ind}>
-                      <ProductCard title={item.productName} image={item.image} description={item.description} productId={ind} key={ind} className={styles.productListingItem}/>
-                    </SwiperSlide>
-                })}
+        <SwiperSlide className={styles.items}>Slide 1</SwiperSlide>
+        <SwiperSlide className={styles.items}>Slide 2</SwiperSlide>
+        <SwiperSlide className={styles.items}>Slide 3</SwiperSlide>
+        <SwiperSlide className={styles.items}>Slide 4</SwiperSlide>
       </Swiper>
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductListing
+export default CarouselSlider;

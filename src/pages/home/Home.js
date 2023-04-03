@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import CarouselSlider from '../../components/molecules/carousel-slider/carousel-slider';
 import {convertComponentList} from '../../components/organisms/componentList/componentList';
 import styles from "./Home.module.scss";
 

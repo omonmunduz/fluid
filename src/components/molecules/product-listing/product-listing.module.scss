@@ -5,22 +5,11 @@
         padding-left: 20px;
     }
     .resultsCtn {
-        height: 500px;
+        height: 390px;
         width:100%;
         display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* For Firefox */
-        -ms-overflow-style: none; /* For Internet Explorer and Edge */
-
-        &::-webkit-scrollbar {
-            display: none; /* For Chrome, Safari, and Opera */
-          }
 
         .productListingItem {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
             white-space: nowrap;
             padding: 10px;
             box-sizing: border-box;
