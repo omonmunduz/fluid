@@ -43,7 +43,7 @@ const CarouselSlider = () => {
             spaceBetween: 50,
           },
         }}
-        spaceBetween={30}
+        spaceBetween={5}
         pagination={{
           clickable: true,
         }}

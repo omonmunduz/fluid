@@ -7,11 +7,11 @@ import styles from "./Home.module.scss";
 
 const Home = () => {
   const homeData = useSelector(state => state.componentList.navigationItems[0]);
-console.log(homeData, 'homeData')
+//console.log(homeData, 'homeData')
 
 
 const chridren = convertComponentList(homeData.componentList);
-console.log(chridren, 'chridren')
+//console.log(chridren, 'chridren')
 
 
   return (

@@ -54,8 +54,7 @@ const getSearchFor = (product) => {
             </div>
             <div className={styles.menuLinks}>
                 <NavLink to="/" className={styles.menuItem}>Home</NavLink>
-                <NavLink to="/" className={styles.menuItem}>Our Store</NavLink>
-                <NavLink to="/" className={styles.menuItem}>Blogs</NavLink>
+                <NavLink to="/products" className={styles.menuItem}>Products</NavLink>
                 <NavLink to="/contact" className={styles.menuItem}>Contact</NavLink>
             </div>
           </div>

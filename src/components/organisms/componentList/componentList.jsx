@@ -12,7 +12,7 @@ const subConverters = {
 };
 
 export const convertComponentList = (componentListData) => {
-    console.log('componentListData', componentListData)
+    //console.log('componentListData', componentListData)
     return (
         componentListData.map((componentData) => {
       const type = componentData.type;

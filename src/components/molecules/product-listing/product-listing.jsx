@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductCard from '../../atoms/product-card/product-card';
@@ -11,9 +12,13 @@ import "swiper/css/autoplay";
 const ProductListing = ({items, title}) => {
   const [swiperRef, setSwiperRef] = useState(null);
 
+  const sliderStyle = {
+   marginRight: '0 !important',
+  };
+
   return (
     <div className={styles.productListing}>
-      <h2>{title} :</h2>
+      <h2>{title}<Link className={styles.seeMore}>See more</Link></h2>
       <div className={styles.resultsCtn}>
       <Swiper
         onSwiper={setSwiperRef}
@@ -41,7 +46,7 @@ const ProductListing = ({items, title}) => {
             spaceBetween: 50,
           },
         }}
-        spaceBetween={30}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
@@ -50,8 +55,8 @@ const ProductListing = ({items, title}) => {
         className={`${styles.mySwiper} ${styles.initialOffset}`}
       >
         {items.map((item,ind) => {
-            return <SwiperSlide key={ind}>
-                      <ProductCard title={item.productName} image={item.image} description={item.description} productId={ind} key={ind} className={styles.productListingItem}/>
+            return <SwiperSlide key={ind} style={sliderStyle}>
+                      <ProductCard title={item.productName} image={item.image} description={item.description} productId={item.id} key={ind} className={styles.productListingItem}/>
                     </SwiperSlide>
                 })}
       </Swiper>

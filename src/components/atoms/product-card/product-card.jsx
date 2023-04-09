@@ -5,7 +5,7 @@ import styles from "./product-card.module.scss";
 const ProductCard = ({title, image, description, productId}) => {
   return (
     <div className={styles.productCard} >
-      <Link to={`productDetails/${productId}`}>
+      <Link to={`/productDetails/${productId}`}>
         <div className={styles.ctnImg}>
             <img src={image} alt={title}/>
         </div>
