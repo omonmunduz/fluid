@@ -1,6 +1,7 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { addItem, removeItem, updateItemQuantity, increment, decrement} from '../../../features/counter/cart/cartSlice';
 import { useQuery } from '@tanstack/react-query';
 import fetchProduct from '../../../assets/js/fetchProduct';
 import styles from './product-details.module.scss';
@@ -19,6 +20,7 @@ const getAllProducts = (state) => {
 
 const ProductDetails = () => {
     const { productId } = useParams();
+    const dispatch = useDispatch();
     const allData = useSelector(state => state.componentList.navigationItems[0]);
     const productsData = allData.componentList.filter(item => item.type === 'productList');
     const allProducts = getAllProducts(productsData);
@@ -29,6 +31,11 @@ const ProductDetails = () => {
         }
     }
     console.log(product, 'product')
+    
+    const handleAddToCart = (product) => {
+      dispatch(addItem(product));
+    };
+
 
 
     /*const results = useQuery(["details", productId], fetchProduct);   
@@ -84,10 +91,11 @@ const ProductDetails = () => {
 
             <div className={styles.ctnBtn}>
               <button className={styles.btnBuy}>Buy Now</button>
-              <button className={styles.btnAdd}>Add to Cart</button>
+              <button className={styles.btnAdd}  onClick={() => handleAddToCart(product)}>Add to Cart</button>
             </div>
 
             <div className={styles.ctnDelivery}>
+              
             </div>
 
           </div>

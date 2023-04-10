@@ -9,7 +9,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import { Contact } from './pages/contact/Contact';
-import {About} from './pages/about/About';
+import Cart from './components/molecules/cart/cart';
 import ProductDetails from './components/molecules/product-details/product-details';
 import Products from './pages/products/Products';
 
@@ -38,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout/> }>
               <Route path="/productDetails/:productId" element={<ProductDetails/>}/>
+              <Route path="cart" element={<Cart/>}/>
               <Route index element={<Home/>}/>
               <Route path="products" element={<Products/>}/>
               <Route path="contact" element={<Contact/>}/>
