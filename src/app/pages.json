@@ -1,0 +1,158 @@
+{
+    "navbar": {
+        "brand": {
+            "name": "Brand Name",
+            "image": "https://picsum.photos/200/300"
+        },
+        "wishList": true,
+        "cart": true,
+        "search": true,
+        "categories": [
+            {
+                "name": "Category 1",
+                "id": 1,
+                "children": [
+                    {
+                        "name": "Sub Category 1",
+                        "id": 1
+                    },
+                    {
+                        "name": "Sub Category 2",
+                        "id": 2
+                    },
+                    {
+                        "name": "Sub Category 3",
+                        "id": 3
+                    }
+                ]
+            },
+            {
+                "name": "Category 2",
+                "id": 2
+            },
+            {
+                "name": "Category 3",
+                "id": 3,
+                "children": [
+                    {
+                        "name": "Sub Category 1",
+                        "id": 1
+                    },
+                    {
+                        "name": "Sub Category 2",
+                        "id": 2
+                    },
+                    {
+                        "name": "Sub Category 3",
+                        "id": 3
+                    }
+                ]
+            }
+        ]
+    },
+    "home": {
+        "componentList": [
+            { 
+                "type": "promotionsHero",
+                "id": 1, 
+                "children": [
+                                {
+                                "productName": "Laptops Max",
+                                "description":"From.",
+                                "image": "https://picsum.photos/200/300",
+                                "cardSize": "large",
+                                "price": 1699.00,
+                                "id": 1
+                                },
+                                {
+                                    "productName": "Laptops Max",
+                                    "description":"From .",
+                                    "image": "https://picsum.photos/200/300",
+                                    "cardSize": "small",
+                                    "price": 1699.00,
+                                    "id": 2
+                                },
+                                {
+                                    "productName": "Laptops Max",
+                                    "description":"From .",
+                                    "image": "https://picsum.photos/200/300",
+                                    "cardSize": "small",
+                                    "price": 1699.00,
+                                    "id": 3,
+                                },
+                                {
+                                    "productName": "Laptops Max",
+                                    "description":"From .",
+                                    "image": "https://picsum.photos/200/300",
+                                    "cardSize": "small",
+                                    "price": 1699.00,
+                                    "id": 4
+                                },
+                                {
+                                    "productName": "Laptops Max",
+                                    "description":"From .",
+                                    "image": "https://picsum.photos/200/300",
+                                    "cardSize": "small",
+                                    "price": 1699.00,
+                                    "id": 5
+                                }
+                            ]
+            },
+            {
+              "type": "productList",
+              "subType": "popularItems",
+              "title": "Popular Items",
+              "id": 2,
+              "children": [
+                {
+                "productName": "Laptops Max",
+                "description":"From.",
+                "image": "https://picsum.photos/200/300",
+                "cardSize": "large",
+                "id": 6,
+                "price": 1699.00
+                },
+                {
+                    "productName": "Laptops Max",
+                    "description":"From.",
+                    "image": "https://picsum.photos/200/300",
+                    "cardSize": "large",
+                    "id": 7,
+                    "price": 1699.00
+                },
+                    {
+                        "productName": "Laptops Max",
+                        "description":"From.",
+                        "image": "https://picsum.photos/200/300",
+                        "cardSize": "large",
+                        "id": 8,
+                        "price": 1699.00
+                        },
+                        {
+                            "productName": "Laptops Max",
+                            "description":"From.",
+                            "image": "https://picsum.photos/200/300",
+                            "cardSize": "large",
+                            "price": 1699.00,
+                            "id": 9
+                            },
+                            {
+                                "productName": "Laptops Max",
+                                "description":"From.",
+                                "image": "https://picsum.photos/200/300",
+                                "cardSize": "large",
+                                "price": 1699.00,
+                                "id": 10
+                                }
+                        
+                }]
+            }
+
+        ]
+    },
+    "category": {
+        "filters": [],
+        "sorts": [],
+        "products": [],
+    }
+}

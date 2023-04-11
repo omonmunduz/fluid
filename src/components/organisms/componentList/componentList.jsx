@@ -4,7 +4,6 @@ import CategotyListing from '../../molecules/category-listing/category-listing.j
 
 
 
-
 const subConverters = {
     promotionsHero: PromotionsHero,
     productList: ProductList,
