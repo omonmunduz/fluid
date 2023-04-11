@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './features/counter/counterSlice';
+import cartReducer from './features/counter/cart/cartSlice';
 import componentListReducer from './components/organisms/componentList/componentListSlice';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Layout from './components/Layout';
@@ -17,6 +18,7 @@ const store = configureStore({
   reducer: {
     counter: counterReducer,
     componentList: componentListReducer,
+    cart: cartReducer,
   },
 });
 

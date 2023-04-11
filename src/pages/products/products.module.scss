@@ -7,7 +7,6 @@
 
     .productsWrapperInnerCtn {
         height: 100vh;
-        border: 2px solid blue;
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Change the number of columns as needed */
         gap: 20px;

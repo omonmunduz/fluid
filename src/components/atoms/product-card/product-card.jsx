@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../../../features/counter/cart/cartSlice';
 import styles from "./product-card.module.scss";
 
-const ProductCard = ({title, image, description, productId}) => {
+const ProductCard = ({title, image, description, productId, price}) => {
   const dispatch = useDispatch();
 
   const product = {
@@ -12,6 +12,7 @@ const ProductCard = ({title, image, description, productId}) => {
     title: title,
     image: image,
     description: description,
+    price: price,
   }
 
   const handleAddToCart = (product) => {
@@ -27,7 +28,7 @@ const ProductCard = ({title, image, description, productId}) => {
         <div className={styles.productInfo}>
             <div className={styles.ctnText}>
                 <p className={styles.title}>{title}</p>
-                <span className={styles.price}>$89<sup>99</sup></span>
+                <span className={styles.price}>{price}</span>
             </div>
             <p className={styles.description}>{description}</p>
         </div>

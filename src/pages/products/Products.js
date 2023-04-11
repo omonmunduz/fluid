@@ -31,7 +31,14 @@ function Products() {
             {
                 allProducts.map((item, index) => {
                     return(
-                        <ProductCard title={item.productName} image={item.image} description={item.description} productId={item.id} key={index} className={styles.productItem}/>
+                        <ProductCard 
+                            title={item.productName} 
+                            image={item.image} 
+                            description={item.description} 
+                            productId={item.id}
+                            price={item.price}
+                            key={index} 
+                            className={styles.productItem}/>
                     )
                 })
             }

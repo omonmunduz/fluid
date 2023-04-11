@@ -56,7 +56,14 @@ const ProductListing = ({items, title}) => {
       >
         {items.map((item,ind) => {
             return <SwiperSlide key={ind} style={sliderStyle}>
-                      <ProductCard title={item.productName} image={item.image} description={item.description} productId={item.id} key={ind} className={styles.productListingItem}/>
+                      <ProductCard 
+                        title={item.productName} 
+                        image={item.image} 
+                        description={item.description} 
+                        productId={item.id} 
+                        key={ind} 
+                        price={item.price}
+                        className={styles.productListingItem}/>
                     </SwiperSlide>
                 })}
       </Swiper>
