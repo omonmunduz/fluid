@@ -154,5 +154,13 @@
         "filters": [],
         "sorts": [],
         "products": [],
-    }
+    },
+    "product": {
+        "productName": "Laptops Max",
+        "description":"From.",
+        "image": "https://picsum.photos/200/300",
+        "cardSize": "large",
+        "price": 1699.00,
+        "id": 177
+    },
 }
