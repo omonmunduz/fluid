@@ -1,0 +1,130 @@
+.imageTextCtn {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%;
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+        @media (max-width: 737px) {
+            padding: 15px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .imageCtn {
+        width: 50%;
+
+        img {   
+            width: 100%;
+        }
+    }
+
+
+    .textCtn {
+        max-width: 400px;
+        width: 50%;
+        width: 100%;
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: -.02em;
+            line-height: 1;
+            margin-bottom: 35px;
+        }
+
+        .subtitle {
+            color: #a82d9c;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .08em;
+            line-height: 1;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+    }
+
+    .textTop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 737px) {
+            padding: 15px;
+        }
+
+        .textCtn {
+            max-width: 689px;
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .text {
+            max-width: 660px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .imageCtn {
+            max-width: 529px;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+
+    .textRight {
+        display: flex;
+        @media (max-width: 737px) {
+            padding: 15px;
+            flex-direction: column;
+        }
+        
+        .textCtn {
+            order: 2;
+        }
+
+        .imageCtn {
+            order: 1;
+
+            @media (max-width: 737px) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .textLeft {
+        display: flex;
+        @media (max-width: 737px) {
+            padding: 15px;
+            flex-direction: column;
+        }
+
+        .textCtn {
+            order: 1;
+        }
+
+        .imageCtn {
+            order: 2;
+
+            @media (max-width: 737px) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
