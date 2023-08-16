@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from "../../atoms/carousel/carousel.jsx";
-import PromoCard from '../../atoms/promo-card/promoCard';
+import PromoCard from '../../atoms/promo-card/promo-Card';
 import cat1 from "../../../images/catbanner-01.jpg";
 import cat2 from "../../../images/catbanner-02.jpg";
 import cat3 from "../../../images/catbanner-03.jpg";

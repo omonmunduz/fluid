@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./InnerLayout.module.scss";
+import styles from "./Inner-Layout.module.scss";
 
 const InnerLayout = ({chidlren}) => {
   return (
