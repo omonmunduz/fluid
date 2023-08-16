@@ -61,3 +61,4 @@ function CartItem({image, title, price, quantity, description, id}) {
 }
 
 export default CartItem;
+// testing
