@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from "prop-types";
 import styled from "styled-components";
-import styles from "./promoCard.module.scss";
+import styles from "./promo-Card.module.scss";
 import classNames from 'classnames';
 
 const ImgCtn = styled.img`
